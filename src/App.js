@@ -6,9 +6,10 @@ import {
   Route
 } from "react-router-dom";
 
-import About from "./pages/About"
-import Skills from "./pages/Skills"
-import Home from "./pages/Home"
+import About from "./pages/About";
+import Skills from "./pages/Skills";
+import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Link to="/">Home</Link>
       <Link to="/about">About</Link>
       <Link to="/skills">Skills</Link>
-      <Link to="/about">About</Link>
+      <Link to="/portfolio">Portfolio</Link>
 
       <div className="App">
         <Switch>
@@ -27,8 +28,13 @@ function App() {
           <Route exact path='/about'>
             <About/>
           </Route>
+
           <Route exact path='/skills'>
             <Skills />
+          </Route>
+
+          <Route exact path='/portfolio'>
+            <Portfolio />
           </Route>
         </Switch>
       </div>
