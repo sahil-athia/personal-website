@@ -8,10 +8,12 @@ import {
 
 import About from "./pages/About"
 import Skills from "./pages/Skills"
+import Home from "./pages/Home"
 
 function App() {
   return (
     <Router>
+      <Link to="/">Home</Link>
       <Link to="/about">About</Link>
       <Link to="/skills">Skills</Link>
       <Link to="/about">About</Link>
@@ -19,7 +21,7 @@ function App() {
       <div className="App">
         <Switch>
           <Route exact path="/">
-            
+            <Home />
           </Route>
           
           <Route exact path='/about'>
