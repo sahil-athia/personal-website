@@ -16,7 +16,7 @@ import Portfolio from "./pages/Portfolio";
 function App() {
   return (
     <>
-      <Nav defaultActiveKey="/" className="flex-column" style={{maxWidth: "10vw"}}>
+      <Nav defaultActiveKey="/" className="flex-row">
         <Nav.Link href="/">Home</Nav.Link>
         <Nav.Link href="/about">About</Nav.Link>
         <Nav.Link href="/skills">Skills</Nav.Link>
