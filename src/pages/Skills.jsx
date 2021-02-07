@@ -34,12 +34,24 @@ export default function Skills() {
 
   return(
     <div className="skills-box">
-      <div className="text-box">
-        <h1>Skills & Experience</h1>
-        <p> Description of major skills and experience</p>
-      </div>
-      <div className="scatter">
-        <h4 className="text" ref={text} ></h4>
+      <div >
+        <h1>
+          Skills & Experience: 
+          <div className="scatter">
+            <h4 className="text" ref={text} ></h4>
+            </div></h1>
+        <div className="text-box"> 
+        <h4>Languages →</h4>
+        <p>JavaScript, Ruby, HTML, CSS</p>
+        <h4>Frameworks/Libraries →</h4>
+        <p>NodeJS, ReactJS, Ajax, Express, EJS, jQuery, Bootstrap, SASS, Rails</p>
+        <h4>Systems, CMS, & Databases →</h4>
+        <p>SQL, Git, Command Line</p>
+        <h4>Testing →</h4>
+        <p>Jest, Mocha, Chai, Cypress, Storybook</p>
+        <h4>E-Commerce →</h4>
+        <p>Shopify, Canva</p>
+        </div>
       </div>
     </div>
   )
