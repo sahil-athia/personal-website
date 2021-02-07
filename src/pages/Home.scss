@@ -1,11 +1,14 @@
 .home-box {
+  height: 100vh;
+  align-items: center;
   display: flex;
-
+  justify-content: space-evenly;
   .greeting {
-
+    text-align: left;
+    font-size: 400%;
   }
 
   .greeting-icon {
-    
+
   }
 }
