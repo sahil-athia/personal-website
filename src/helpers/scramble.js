@@ -6,7 +6,6 @@ class TextScramble {
   }
   setText(newText) {
     if (this.el.current) {
-  
       const oldText = this.el.current.innerHTML
       const length = Math.max(oldText.length, newText.length)
       const promise = new Promise((resolve) => this.resolve = resolve)
