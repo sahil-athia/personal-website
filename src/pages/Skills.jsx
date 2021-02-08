@@ -7,21 +7,17 @@ export default function Skills() {
 
   useEffect(() => {
     const phrases1 = [
-      "Testing1",
-      "Testing2",
-      "Testing3",
-      "Testing4"
+      "HTML",
+      "JavaScript",
+      "Ruby",
+      "CSS",
+      "Solidity"
     ]
     const phrases2 = [
-      "Testin1",
-      "Testin2",
-      "Testin4"
+      "NodeJS", "ReactJS", "Ajax", "Express", "EJS", "jQuery", "Bootstrap", "SASS", "Rails"
     ]
     const phrases3 = [
-      "Testing1",
-      "Testing2",
-      "Testing3",
-      "Testing4"
+      "SQL", "Git", "Command Line"
     ]
 
     const el = [text1, text2, text3];
@@ -33,7 +29,7 @@ export default function Skills() {
       const scramble1 = () => {
         fx1.setText(phrases1[counter1])
         .then(() => {
-        timeOut1 = setTimeout(scramble1, 800)
+        timeOut1 = setTimeout(scramble1, 1000)
         })
         .catch(e => console.log(e))
         counter1 = (counter1 + 1) % phrases1.length;
@@ -42,7 +38,7 @@ export default function Skills() {
       const scramble2 = () => {
         fx2.setText(phrases2[counter2])
         .then(() => {
-        timeOut2 = setTimeout(scramble2, 800)
+        timeOut2 = setTimeout(scramble2, 1000)
         })
         .catch(e => console.log(e))
         counter2 = (counter2 + 1) % phrases2.length;
@@ -51,7 +47,7 @@ export default function Skills() {
     const scramble3 = () => {
       fx3.setText(phrases3[counter3])
         .then(() => {
-        timeOut3 = setTimeout(scramble3, 800)
+        timeOut3 = setTimeout(scramble3, 1000)
         })
         .catch(e => console.log(e))
       counter3 = (counter3 + 1) % phrases3.length;
