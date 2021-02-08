@@ -12,6 +12,7 @@ import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <About />
       <Skills />
       <Portfolio />
+      <Contact />
     </>
   );
 }
