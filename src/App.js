@@ -16,7 +16,17 @@ import Portfolio from "./pages/Portfolio";
 function App() {
   return (
     <>
-      <Nav defaultActiveKey="/" className="flex-row">
+      <Home />
+      <About />
+      <Skills />
+      <Portfolio />
+    </>
+  );
+}
+
+export default App;
+
+{/* <Nav defaultActiveKey="/" className="flex-row">
         <Nav.Link href="/">Home</Nav.Link>
         <Nav.Link href="/about">About</Nav.Link>
         <Nav.Link href="/skills">Skills</Nav.Link>
@@ -43,9 +53,4 @@ function App() {
           </Route>
         </Switch>
       </div>
-    </Router>
-    </>
-  );
-}
-
-export default App;
+    </Router> */}
