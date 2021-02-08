@@ -20,9 +20,10 @@ export default function Contact() {
     <div className="contact-box">
       <h1> CONTACT </h1>
       <div className="svg-wrapper">
+        <h1 className="text">CONTACT</h1>
         <svg height="60" width="520" xmlns="http://www.w3.org/2000/svg">
         <rect className="shape" height="60" width="520" />
-        <div className="text">Wolfsrudel Design</div>
+        <h1 className="text">CONTACT</h1>
         </svg>
     </div>
     </div>
