@@ -10,19 +10,41 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+
   .greeting {
+    position: relative;
     font-weight: 100;
     text-align: left;
     font-size: 400%;
+    z-index: 1;
   }
 
-  .greeting-icon {
-
+  .greeting-box {
+    width: 100vw;
+    max-height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .greeting-icon {
+      display: block;
+      height: 120%;
+      width: auto;
+      margin-top: -6vh;
+      // margin-left: auto;
+      // margin-right: auto;
+    }
+    span {
+      margin-right: 1vw;
+      margin-left: 1vw;
+      min-width: 10vw;
+    }
   }
 
   .title {
+    position: relative;
     font-weight: 100;
     text-align: left;
     font-size: 400%;
+    z-index: 1;
   }
 }
