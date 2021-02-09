@@ -4,13 +4,15 @@ export default function Home() {
   return(
     <div className="home-box">
       <div className="greeting">
-        <p>Greeting text,</p>
-        <p>name and</p> 
-        <p>title</p>
+        <p>Hi, Im Sahil Athia</p>
       </div>
       <div className="greeting-icon">
         Add art or image/animation to front home page
       </div>
+      <div className="title">
+        <p>Web Developer | Beginner Blockchain Developer</p>
+      </div>
+      
     </div>
   )
 }
