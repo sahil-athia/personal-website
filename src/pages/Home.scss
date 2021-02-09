@@ -40,11 +40,6 @@
       display: block;
       height: 150%;
       width: auto;
-      filter: grayscale(1);
-
-      &:hover {
-        filter: grayscale(0);
-      }
     }
 
     span {
@@ -57,7 +52,7 @@
 
   .title {
     position: relative;
-    text-align: left;
+    text-align: center;
     font-size: 700%;
     z-index: 1;
   }
