@@ -1,8 +1,38 @@
 import "./Home.scss";
+import {TextScramble} from '../helpers/scramble.js'
+import React, { useEffect, useRef } from 'react'
 
 export default function Home(props) {
+  // const text = useRef(<></>);
+
+  useEffect(() => {
+    // const phrases = [
+    //   'WEB DEVELOPER',
+    //   'SMART CONTRACT DEV',
+    //   'DECENTRALIZED APP DEV'
+    // ]
+    // const el = text
+    // const fx = new TextScramble(el)
+    // let timeOut;
+
+    // let counter = 0
+    // async function next() {
+    //   fx.setText(phrases[counter])
+    //     .then(() => {
+    //     timeOut = setTimeout(next, 1500)
+    //     })
+    //     .catch(e => console.log(e))
+    //   counter = (counter + 1) % phrases.length
+    // } 
+    // next()
+    
+    // return function cleanup() {
+    //   clearTimeout(timeOut)
+    // }
+  }, [])
+
   return(
-    <div className="home-box">
+    <div className="home-box" ref={props.homePage}>
       <div className="menu">
         <span className="scroll-contact" onClick={props.scrollToContact}>CONTACT</span>
         <span>WELCOME</span>

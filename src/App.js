@@ -10,20 +10,26 @@ import Contact from "./pages/Contact";
 
 function App() {
   const contactPage = useRef()
+  const homePage = useRef()
   const scrollToContact = () => {
     if (contactPage.current) {
       contactPage.current.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+  const scrollToTop = () => {
+    if (homePage.current) {
+      homePage.current.scrollIntoView({ behavior: "smooth" })
     }
   }
 
 
   return (
     <>
-      <Home scrollToContact={scrollToContact}/>
+      <Home scrollToContact={scrollToContact} homePage={homePage}/>
       <About />
       <Skills />
       <Portfolio />
-      <Contact contactPage={contactPage}/>
+      <Contact scrollToTop={scrollToTop} contactPage={contactPage}/>
     </>
   );
 }

@@ -25,7 +25,8 @@ export default function Contact(props) {
         <rect className="shape" height="60" width="520" />
         <h1 className="text">CONTACT</h1>
         </svg>
-    </div>
+      </div>
+      <span className="scroll-top" onClick={props.scrollToTop}>Back to Top</span>
     </div>
   )
 }
