@@ -1,15 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:wght@300&display=swap');
+
 .home-box {
+  color: #F7F7F7;
+  font-family: 'Cormorant Garamond', serif;
+  // font-family: 'Cinzel', serif;
+  background-color: #0A0A0A;
   height: 100vh;
   align-items: center;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   .greeting {
+    font-weight: 100;
     text-align: left;
     font-size: 400%;
   }
 
   .greeting-icon {
 
+  }
+
+  .title {
+    font-weight: 100;
+    text-align: left;
+    font-size: 400%;
   }
 }
