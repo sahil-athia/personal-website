@@ -2,7 +2,7 @@ import "./Contact.scss";
 import $ from 'jquery';
 import {useEffect} from"react";
 
-export default function Contact() {
+export default function Contact(props) {
 
   useEffect(() => {
       $(".contact-box").on({
@@ -17,7 +17,7 @@ export default function Contact() {
   }, [])
 
   return (
-    <div className="contact-box">
+    <div className="contact-box" ref={props.contactPage}>
       <h1> CONTACT </h1>
       <div className="svg-wrapper">
         <h1 className="text">CONTACT</h1>

@@ -1,10 +1,10 @@
 import "./Home.scss";
 
-export default function Home() {
+export default function Home(props) {
   return(
     <div className="home-box">
       <div className="menu">
-        <span>CONTACT</span>
+        <span className="scroll-contact" onClick={props.scrollToContact}>CONTACT</span>
         <span>NAME</span>
         <span>MENU</span>
       </div>

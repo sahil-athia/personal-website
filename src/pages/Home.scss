@@ -15,9 +15,14 @@
     width: 100vw;
     display: flex;
     justify-content: space-between;
+
     span {
       text-align: center;
       min-width: 10vw;
+    }
+
+    .scroll-contact {
+      cursor: pointer;
     }
   }
 
@@ -56,4 +61,17 @@
     font-size: 700%;
     z-index: 1;
   }
+}
+
+@media (max-width: 768px) {
+  .home-box{
+
+    .title {
+      font-size: 300%;
+    }
+    .greeting {
+      font-size: 300%;
+    }
+  }
+  
 }
