@@ -39,7 +39,11 @@ export default function Home(props) {
         <span>MENU</span>
       </div>
 
-      <div className="greeting">
+      <div 
+        className="greeting" 
+        data-aos-duration="1000"
+        data-aos="zoom-out"
+      >
         <p>HI, IM SAHIL ATHIA</p>
       </div>
 

@@ -1,6 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {useRef, useEffect} from 'react'
+import { useRef, useEffect } from 'react'
+import AOS from 'aos';
 
 import About from "./pages/About";
 import Skills from "./pages/Skills";
@@ -21,6 +22,11 @@ function App() {
       homePage.current.scrollIntoView({ behavior: "smooth" })
     }
   }
+
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
 
 
   return (
