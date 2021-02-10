@@ -23,9 +23,10 @@ export default function Contact(props) {
       <hr className={`line-1 ${isVisible ? 'slide' : ''}`} ref={domRef}></hr>
 
       <div className="contact-info" data-aos="fade-up" data-aos-duration="1000">
-        <div data-aos="fade-up" data-aos-duration="1000">
-          <span>Github: sahil-athia</span>
-          <span>LinkedIn: Sahil Athia</span>
+        <div className="contact-words" data-aos="fade-up" data-aos-duration="1000">
+          <span><b>Toronto, On</b></span><br></br>
+          <span><b>(416) 995 2980</b></span><br></br>
+          <span><b>sahilathia918@gmail.com</b></span>
         </div>
         <div data-aos="fade-up" data-aos-duration="2000"></div>
       </div>

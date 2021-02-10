@@ -37,7 +37,11 @@
 
   .contact-info {
     height: 40%;
-
+    display: flex;
+    
+     .contact-words {
+       font-size: 150%;
+     }
     
   }
 
