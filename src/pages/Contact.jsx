@@ -16,9 +16,9 @@ export default function Contact(props) {
 
   return (
     <div className="contact-box" ref={props.contactPage}>
-      <span data-aos="fade-up" data-aos-duration="1000">GET IN TOUCH</span>
+      <span className="contact-note" data-aos="fade-up" data-aos-duration="1500">GET IN TOUCH</span>
 
-      <h1 className="contact-header" data-aos="fade-up" data-aos-duration="1000">CONTACT</h1>
+      <h1 className="contact-header" data-aos="fade-up" data-aos-duration="1500">CONTACT</h1>
 
       <hr className={`line-1 ${isVisible ? 'slide' : ''}`} ref={domRef}></hr>
 
