@@ -63,6 +63,7 @@
     z-index: 1;
   }
 }
+
 $pure-white: hsla(0, 0%, 100%, 1); // #fff
 $pure-black: hsla(0, 0%, 0%, 1); // #000
 $dark-jungle-green: hsla(210, 3%, 11%, 1); //1c1d1e
@@ -358,6 +359,8 @@ $transition-fast: .2s cubic-bezier(.77, 0, .175, 1);
 		transform: translate3d(0, 0, 0);
 	}
 }
+
+
 @media (max-width: 768px) {
   .home-box{
 

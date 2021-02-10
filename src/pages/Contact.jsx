@@ -3,6 +3,7 @@ import $ from 'jquery';
 import {useEffect, useState, useRef} from"react";
 import githubLogo from "../images/githubBrand.svg"
 import linkedinLogo from "../images/linkedinBrand.svg"
+import envelopeLogo from "../images/envelope.svg"
 
 export default function Contact(props) {
   const [isVisible, setVisible] = useState(true);
@@ -31,16 +32,20 @@ export default function Contact(props) {
           <span><b>sahilathia918@gmail.com</b></span>
         </div>
 
-        <div data-aos="zoom-in" data-aos-duration="1500">
+        <div data-aos="zoom-in" data-aos-duration="1000">
           <a href={`https://github.com/sahil-athia`} target="_blank" className="link">
             <img src={githubLogo} alt="Github-Logo" className="github logo"  />
           </a>
         </div>
 
-        <div data-aos="zoom-in" data-aos-duration="2000">
+        <div data-aos="zoom-in" data-aos-duration="1500">
           <a href={`https://www.linkedin.com/in/sahilathia/`} target="_blank" className="link">
             <img src={linkedinLogo} alt="Linked-Logo" className="linkedin logo" />
           </a> 
+        </div>
+
+        <div data-aos="zoom-in" data-aos-duration="2000">
+          <img src={envelopeLogo} alt="Envelope-Logo" className="envelope logo" />
         </div>
       </div>
 
