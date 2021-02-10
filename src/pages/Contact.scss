@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 
   .contact-note {
     margin-top: 10vh;
@@ -36,11 +37,20 @@
   }
 
   .contact-info {
-    height: 40%;
     display: flex;
-    
+    justify-content: space-evenly;
+    height: 40%;
+    align-items: center;
+
      .contact-words {
        font-size: 150%;
+       margin: 7vh;
+     }
+
+     .logo {
+       margin: 7vh;
+       filter: invert(1);
+       height: 25vh;
      }
     
   }

@@ -1,6 +1,8 @@
 import "./Contact.scss";
 import $ from 'jquery';
 import {useEffect, useState, useRef} from"react";
+import githubLogo from "../images/githubBrand.svg"
+import linkedinLogo from "../images/linkedinBrand.svg"
 
 export default function Contact(props) {
   const [isVisible, setVisible] = useState(true);
@@ -28,7 +30,14 @@ export default function Contact(props) {
           <span><b>(416) 995 2980</b></span><br></br>
           <span><b>sahilathia918@gmail.com</b></span>
         </div>
-        <div data-aos="fade-up" data-aos-duration="2000"></div>
+
+        <div data-aos="zoom-in" data-aos-duration="1500">
+          <img src={githubLogo} alt="Github-Logo" className="github logo" />
+        </div>
+
+        <div data-aos="zoom-in" data-aos-duration="2000">
+          <img src={linkedinLogo} alt="Linked-Logo" className="linkedin logo" />
+        </div>
       </div>
 
       <hr className={`line-2 ${isVisible ? 'slide' : ''}`} ref={domRef}></hr>

@@ -10,6 +10,10 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 
 function App() {
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+  
   const contactPage = useRef()
   const homePage = useRef()
   const scrollToContact = () => {
@@ -22,7 +26,6 @@ function App() {
       homePage.current.scrollIntoView({ behavior: "smooth" })
     }
   }
-
   useEffect(() => {
     AOS.init()
   }, [])
