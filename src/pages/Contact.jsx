@@ -32,11 +32,15 @@ export default function Contact(props) {
         </div>
 
         <div data-aos="zoom-in" data-aos-duration="1500">
-          <img src={githubLogo} alt="Github-Logo" className="github logo" />
+          <a href={`https://github.com/sahil-athia`} target="_blank" className="link">
+            <img src={githubLogo} alt="Github-Logo" className="github logo"  />
+          </a>
         </div>
 
         <div data-aos="zoom-in" data-aos-duration="2000">
-          <img src={linkedinLogo} alt="Linked-Logo" className="linkedin logo" />
+          <a href={`https://www.linkedin.com/in/sahilathia/`} target="_blank" className="link">
+            <img src={linkedinLogo} alt="Linked-Logo" className="linkedin logo" />
+          </a> 
         </div>
       </div>
 

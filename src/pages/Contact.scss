@@ -47,7 +47,12 @@
        margin: 7vh;
      }
 
+     .link {
+       visibility: hidden;
+     }
+
      .logo {
+      visibility: visible;
        margin: 7vh;
        filter: invert(1);
        height: 25vh;
