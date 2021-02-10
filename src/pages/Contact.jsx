@@ -16,16 +16,28 @@ export default function Contact(props) {
 
   return (
     <div className="contact-box" ref={props.contactPage}>
-      <span>GET IN TOUCH</span>
-      <h1 className="contact-header">CONTACT</h1>
+      <span data-aos="fade-up" data-aos-duration="1000">GET IN TOUCH</span>
+
+      <h1 className="contact-header" data-aos="fade-up" data-aos-duration="1000">CONTACT</h1>
+
       <hr className={`line-1 ${isVisible ? 'slide' : ''}`} ref={domRef}></hr>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
+
+      <div className="contact-info" data-aos="fade-up" data-aos-duration="1000">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <span>Github: sahil-athia</span>
+          <span>LinkedIn: Sahil Athia</span>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2000"></div>
       </div>
+
       <hr className={`line-2 ${isVisible ? 'slide' : ''}`} ref={domRef}></hr>
-      <span className="scroll-top" onClick={props.scrollToTop}>Back to Top</span>
+
+      <span 
+        className="scroll-top" 
+        onClick={props.scrollToTop} 
+        >
+        (Back to Top)
+      </span>
     </div>
   )
 }

@@ -3,6 +3,9 @@
   height: 100vh;
   color: white;
   font-family: 'Cormorant Garamond', serif;
+  display: flex;
+  flex-direction: column;
+  
 
   .contact-header {
     font-size: 700%;
@@ -16,14 +19,18 @@
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
-    transition: width 1s ease;
+    transition: width 1.5s ease;
   }
 
   .line-1.slide, .line-2.slide {
     width: 80vw;
   }
 
-  
+  .contact-info {
+    height: 60%;
+
+    
+  }
 
   .line-2 {
     display: block;
@@ -33,7 +40,7 @@
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
-    transition: width 1s ease;
+    transition: width 2.5s ease;
   }
 
   .scroll-top {
