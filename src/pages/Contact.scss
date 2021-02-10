@@ -2,47 +2,42 @@
   background-color: #0A0A0A;
   height: 100vh;
   color: white;
+  font-family: 'Cormorant Garamond', serif;
+
+  .contact-header {
+    font-size: 700%;
+  }
+
+  .line-1 {
+    display: block;
+    width: 0vw;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    transition: width 1s ease;
+  }
+
+  .line-1.slide, .line-2.slide {
+    width: 80vw;
+  }
+
+  
+
+  .line-2 {
+    display: block;
+    width: 0vw;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    transition: width 1s ease;
+  }
 
   .scroll-top {
     cursor: pointer;
   }
-
-    .svg-wrapper {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-    	margin: 0 auto;
-      width: 520px;  
-      text-align: center;
-    }
-    .shape {
-      stroke-dasharray: 0 580;
-      stroke-dashoffset: 580;
-      stroke-width: 4px;
-      fill: transparent;
-      stroke: #fefefe;
-      border-bottom: 5px solid black;
-      transition: stroke-width 2.7s, stroke-dashoffset 2.7s, stroke-dasharray 1.3s;
-      transition-delay: 0s;
-      fill: #0A0A0A;  
-    }
-    // .text {
-    //   font-family: 'David Libre';
-    //   font-size: 22px;
-    //   line-height: 32px;
-    //   letter-spacing: 8px;
-    //   color: #fff;
-    //   top: -48px;
-    //   position: relative;
-    //   text-align: center;
-    //   height: 60px;
-    //   width: 520px;
-    //   font-variant: small-caps;
-    // }
-    .shape-border {
-      stroke-width: 4px;
-      stroke-dashoffset: 0;
-      stroke-dasharray: 480 100;
-    }
 
 }
