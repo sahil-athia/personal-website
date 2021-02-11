@@ -9,9 +9,9 @@ export default function Skills() {
   useEffect(() => {
     const viewportHeight = $(window).height();
     $(window).on("scroll", function () {
-        if ($(document).scrollTop() > viewportHeight * 1.75 && $(document).scrollTop() < viewportHeight * 2.5) {
+        if ($(document).scrollTop() > viewportHeight * 1.75 && $(document).scrollTop() < viewportHeight * 2.35) {
           $(".skills-box").addClass("scrolled");
-        } else if ($(document).scrollTop() > viewportHeight * 2.5) {
+        } else if ($(document).scrollTop() > viewportHeight * 2.35) {
             $(".skills-box").removeClass("scrolled");
         } else {
             $(".skills-box").removeClass("scrolled");
@@ -89,22 +89,39 @@ export default function Skills() {
         </h1>
         <div className="text-box">
           <div>
-            <h4>Languages →</h4>
+            <h4>Languages</h4>
             <p>JavaScript, Ruby, HTML, CSS</p>
           </div>
           <div>
-            <h4>Frameworks/Libraries →</h4>
+            <h4>Frameworks/Libraries </h4>
             <p>NodeJS, ReactJS, Ajax, Express, EJS, jQuery, Bootstrap, SASS, Rails</p>
           </div>
           <div>
-            <h4>Systems, CMS, & Databases →</h4>
+            <h4>Systems, CMS, & Databases </h4>
             <p>SQL, Git, Command Line</p>
           </div>
           <div>
-            <h4>Testing →</h4>
+            <h4>Testing </h4>
             <p>Jest, Mocha, Chai, Cypress, Storybook</p>
           </div>
-        </div>
+          </div>
+          <div className="card-container ">
+            <div className="card">
+              <a>
+                <div className="card--display">
+				          <h2 className="title">Title</h2>
+                </div>
+				        <div className="card--hover">
+				          <h2 className="title">Title</h2>
+				          <p className="description">hehehehhehehehehhe</p>
+                </div>
+			          <div className="card--border">
+                  
+                </div>
+              </a>
+            </div>
+          </div>
+	
     </div>
   )
 }

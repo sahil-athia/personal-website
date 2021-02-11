@@ -8,9 +8,9 @@ export default function About() {
   useEffect(() => {
     const viewportHeight = $(window).height();
     $(window).on("scroll", function () {
-      if ($(document).scrollTop() > viewportHeight * 1.75 && $(document).scrollTop() < viewportHeight * 2.5) {
+      if ($(document).scrollTop() > viewportHeight * 1.75 && $(document).scrollTop() < viewportHeight * 2.35) {
         $(".about-box").addClass("scrolled");
-      } else if ($(document).scrollTop() > viewportHeight * 2.5) {
+      } else if ($(document).scrollTop() > viewportHeight * 2.35) {
           $(".about-box").removeClass("scrolled");
       } else {
           $(".about-box").removeClass("scrolled");
