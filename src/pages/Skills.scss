@@ -4,14 +4,15 @@
   height: 100vh;
   align-items: center;
   display: flex;
-  justify-content: space-evenly;
+  // justify-content: space-evenly;
+  flex-direction: column;
   background-color: #0A0A0A;
   color: #0A0A0A;
-  -webkit-transition: background-color 1700ms linear;
-  -moz-transition: background-color 1700ms linear;
-  -o-transition: background-color 1700ms linear;
-  -ms-transition: background-color 1700ms linear;
-  transition: background-color 1000ms linear;
+  -webkit-transition: background-color 1000ms linear;
+  -moz-transition: background-color 1000ms linear;
+  -o-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 500ms linear;
 
   
   .scatter {
@@ -20,22 +21,25 @@
 
   .skills-header {
     margin-top: 10vh;
+    width: 90vw;
+    margin-left: 10vw;
+    text-align: left;
     font-size: 700%;
   }
   
   .text-box {
     display: grid;
     grid-template-columns: 20vw 20vw;
-    grid-template-rows: 20vw 20vw; 
-    column-gap: 10vw;
-    row-gap: 10vw;
+    grid-template-rows: 10vw 10vw; 
+    column-gap: 5vw;
+    row-gap: 5vw;
   }
 }
 .skills-box.scrolled {
   background-color: white;
-  -webkit-transition: background-color 1700ms linear;
-  -moz-transition: background-color 1700ms linear;
-  -o-transition: background-color 1700ms linear;
-  -ms-transition: background-color 1700ms linear;
-  transition: background-color 1000ms linear;
+  -webkit-transition: background-color 1000ms linear;
+  -moz-transition: background-color 1000ms linear;
+  -o-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 500ms linear;
 }

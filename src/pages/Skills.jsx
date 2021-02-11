@@ -7,7 +7,7 @@ export default function Skills() {
   const [text1, text2, text3] = [useRef(<></>), useRef(<></>), useRef(<></>)];
 
   useEffect(() => {
-  const viewportHeight = $(window).height();
+    const viewportHeight = $(window).height();
     $(window).on("scroll", function () {
         if ($(document).scrollTop() > viewportHeight * 1.75 && $(document).scrollTop() < viewportHeight * 2.5) {
           $(".skills-box").addClass("scrolled");
@@ -73,8 +73,7 @@ export default function Skills() {
 
   return(
     <div className="skills-box">
-      <div >
-        <div className="scatter">
+        {/* <div className="scatter">
           <h4 className="text1" ref={text1} ></h4>
         </div>
 
@@ -84,7 +83,7 @@ export default function Skills() {
 
           <div className="scatter">
             <h4 className="text3" ref={text3} ></h4>
-          </div>
+          </div> */}
         <h1 className="skills-header">
           SKILLS
         </h1>
@@ -106,7 +105,6 @@ export default function Skills() {
             <p>Jest, Mocha, Chai, Cypress, Storybook</p>
           </div>
         </div>
-      </div>
     </div>
   )
 }
