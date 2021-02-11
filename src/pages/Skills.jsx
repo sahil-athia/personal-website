@@ -88,39 +88,73 @@ export default function Skills() {
           SKILLS
         </h1>
         <div className="text-box">
-          <div>
-            <h4>Languages</h4>
-            <p>JavaScript, Ruby, HTML, CSS</p>
-          </div>
-          <div>
-            <h4>Frameworks/Libraries </h4>
-            <p>NodeJS, ReactJS, Ajax, Express, EJS, jQuery, Bootstrap, SASS, Rails</p>
-          </div>
-          <div>
-            <h4>Systems, CMS, & Databases </h4>
-            <p>SQL, Git, Command Line</p>
-          </div>
-          <div>
-            <h4>Testing </h4>
-            <p>Jest, Mocha, Chai, Cypress, Storybook</p>
-          </div>
-          </div>
-          <div className="card-container ">
-            <div className="card">
-              <a>
-                <div className="card--display">
-				          <h2 className="title">Title</h2>
-                </div>
-				        <div className="card--hover">
-				          <h2 className="title">Title</h2>
-				          <p className="description">hehehehhehehehehhe</p>
-                </div>
-			          <div className="card--border">
-                  
-                </div>
-              </a>
+
+            <div className="card-container" data-aos="fade-up" data-aos-duration="500">
+              <div className="card">
+                <a>
+                  <div className="card--display">
+                    <h4 className="title">Languages</h4>
+                  </div>
+                  <div className="card--hover">
+                    <h4 className="title">Languages</h4>
+                    <p className="description">JavaScript, Ruby, HTML, CSS</p>
+                  </div>
+                  <div className="card--border">
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div className="card-container" data-aos="fade-up" data-aos-duration="750">
+              <div className="card">
+                <a>
+                  <div className="card--display">
+                    <h4 className="title">Frameworks & Libraries </h4>
+                  </div>
+                  <div className="card--hover">
+                    <h4 className="title">Frameworks & Libraries </h4>
+                    <p className="description">NodeJS, ReactJS, Ajax, Express, EJS, jQuery, Bootstrap, SASS, Rails</p>
+                  </div>
+                  <div className="card--border">
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div className="card-container" data-aos="fade-up" data-aos-duration="1000">
+              <div className="card">
+                <a>
+                  <div className="card--display">
+                    <h4 className="title">Systems, CMS, & Databases</h4>
+                  </div>
+                  <div className="card--hover">
+                    <h4 className="title">Systems, CMS, & Databases</h4>
+                    <p className="description">SQL, Git, Command Line</p>
+                  </div>
+                  <div className="card--border">
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div className="card-container" data-aos="fade-up" data-aos-duration="1250">
+              <div className="card">
+                <a>
+                  <div className="card--display">
+                    <h4 className="title">Testing </h4>
+                  </div>
+                  <div className="card--hover">
+                    <h4 className="title">Testing </h4>
+                    <p className="description">Jest, Mocha, Chai, Cypress, Storybook</p>
+                  </div>
+                  <div className="card--border">
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
+
+          
 	
     </div>
   )
