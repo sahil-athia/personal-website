@@ -1,11 +1,19 @@
 import {TextScramble} from '../helpers/scramble.js'
 import React, { useEffect, useRef } from 'react'
+import $ from "jquery";
 import "./Skills.scss";
 
 export default function Skills() {
   const [text1, text2, text3] = [useRef(<></>), useRef(<></>), useRef(<></>)];
 
   useEffect(() => {
+      $(window).on("scroll", function () {
+          if ($(document).scrollTop() > 100) {
+            $(".skills-box").addClass("scrolled");
+          } else {
+              $(".skills-box").removeClass("scrolled");
+          }
+      });
     const phrases1 = [ 
       "HTML", "JavaScript", "Ruby", "CSS", "Solidity"
     ]
@@ -88,6 +96,7 @@ export default function Skills() {
           <h4>E-Commerce →</h4>
           <p>Shopify, Canva</p>
         </div>
+        
       </div>
     </div>
   )

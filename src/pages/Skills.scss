@@ -3,8 +3,18 @@
   align-items: center;
   display: flex;
   justify-content: space-evenly;
+  background-color:black;
+  -webkit-transition: background-color 700ms linear;
+  -moz-transition: background-color 700ms linear;
+  -o-transition: background-color 700ms linear;
+  -ms-transition: background-color 700ms linear;
+  transition: background-color 700ms linear;
 
+  
   .scatter {
     
   }
 }
+.skills-box.scrolled {
+  background-color: white;
+  }

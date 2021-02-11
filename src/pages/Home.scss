@@ -40,7 +40,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    filter: brightness(0.3);
+    filter: brightness(0.5);
 
     .greeting-icon {
       display: block;
@@ -115,7 +115,7 @@ $transition-fast: .2s cubic-bezier(.77, 0, .175, 1);
   transform: translate3d(0, 0, 0);
   width: calc(100% + 10px * 2);
   
-  .c-glitch:hover &:nth-child(n+2) {
+  .c-glitch:hover &:nth-child(n+2), .c-glitch:active {
     animation-duration: 2s;
     animation-delay: 0;
     animation-timing-function: linear;
@@ -123,19 +123,19 @@ $transition-fast: .2s cubic-bezier(.77, 0, .175, 1);
     animation-fill-mode: forwards;
   }
   
-  .c-glitch:hover &:nth-child(2) {
+  .c-glitch:hover &:nth-child(2), .c-glitch:active {
     animation-name: glitch-anim-1;
   }
   
-  .c-glitch:hover &:nth-child(3) {
+  .c-glitch:hover &:nth-child(3), .c-glitch:active {
     animation-name: glitch-anim-2;
   }
   
-  .c-glitch:hover &:nth-child(4) {
+  .c-glitch:hover &:nth-child(4), .c-glitch:active {
     animation-name: glitch-anim-3;
   }
   
-  .c-glitch:hover &:nth-child(5) {
+  .c-glitch:hover &:nth-child(5), .c-glitch:active {
     animation-name: glitch-anim-4;
     background-blend-mode: overlay;
     background-color: #af4949;
