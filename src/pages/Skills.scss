@@ -3,12 +3,12 @@
   align-items: center;
   display: flex;
   justify-content: space-evenly;
-  background-color:black;
-  -webkit-transition: background-color 700ms linear;
-  -moz-transition: background-color 700ms linear;
-  -o-transition: background-color 700ms linear;
-  -ms-transition: background-color 700ms linear;
-  transition: background-color 700ms linear;
+  background-color: #0A0A0A;
+  -webkit-transition: background-color 1700ms linear;
+  -moz-transition: background-color 1700ms linear;
+  -o-transition: background-color 1700ms linear;
+  -ms-transition: background-color 1700ms linear;
+  transition: background-color 1700ms linear;
 
   
   .scatter {
@@ -17,4 +17,9 @@
 }
 .skills-box.scrolled {
   background-color: white;
-  }
+  -webkit-transition: background-color 1700ms linear;
+  -moz-transition: background-color 1700ms linear;
+  -o-transition: background-color 1700ms linear;
+  -ms-transition: background-color 1700ms linear;
+  transition: background-color 1700ms linear;
+}

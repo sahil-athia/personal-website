@@ -7,13 +7,17 @@ export default function Skills() {
   const [text1, text2, text3] = [useRef(<></>), useRef(<></>), useRef(<></>)];
 
   useEffect(() => {
-      $(window).on("scroll", function () {
-          if ($(document).scrollTop() > 100) {
-            $(".skills-box").addClass("scrolled");
-          } else {
-              $(".skills-box").removeClass("scrolled");
-          }
-      });
+  const viewportHeight = $(window).height();
+    $(window).on("scroll", function () {
+        if ($(document).scrollTop() > viewportHeight * 1.75 && $(document).scrollTop() < viewportHeight * 2.5) {
+          $(".skills-box").addClass("scrolled");
+        } else if ($(document).scrollTop() > viewportHeight * 2.5) {
+            $(".skills-box").removeClass("scrolled");
+        } else {
+            $(".skills-box").removeClass("scrolled");
+        }
+    });
+
     const phrases1 = [ 
       "HTML", "JavaScript", "Ruby", "CSS", "Solidity"
     ]
@@ -58,9 +62,9 @@ export default function Skills() {
     }
 
       
-    scramble1();
-    scramble2();
-    scramble3();
+    // scramble1();
+    // scramble2();
+    // scramble3();
     
     return function cleanup() {
       clearTimeout(timeOut1, timeOut2, timeOut3);
