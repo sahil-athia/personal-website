@@ -85,22 +85,27 @@ export default function Skills() {
           <div className="scatter">
             <h4 className="text3" ref={text3} ></h4>
           </div>
-        <h1>
-          Skills & Experience: 
+        <h1 className="skills-header">
+          SKILLS
         </h1>
-        <div className="text-box"> 
-          <h4>Languages →</h4>
-          <p>JavaScript, Ruby, HTML, CSS</p>
-          <h4>Frameworks/Libraries →</h4>
-          <p>NodeJS, ReactJS, Ajax, Express, EJS, jQuery, Bootstrap, SASS, Rails</p>
-          <h4>Systems, CMS, & Databases →</h4>
-          <p>SQL, Git, Command Line</p>
-          <h4>Testing →</h4>
-          <p>Jest, Mocha, Chai, Cypress, Storybook</p>
-          <h4>E-Commerce →</h4>
-          <p>Shopify, Canva</p>
+        <div className="text-box">
+          <div>
+            <h4>Languages →</h4>
+            <p>JavaScript, Ruby, HTML, CSS</p>
+          </div>
+          <div>
+            <h4>Frameworks/Libraries →</h4>
+            <p>NodeJS, ReactJS, Ajax, Express, EJS, jQuery, Bootstrap, SASS, Rails</p>
+          </div>
+          <div>
+            <h4>Systems, CMS, & Databases →</h4>
+            <p>SQL, Git, Command Line</p>
+          </div>
+          <div>
+            <h4>Testing →</h4>
+            <p>Jest, Mocha, Chai, Cypress, Storybook</p>
+          </div>
         </div>
-        
       </div>
     </div>
   )
