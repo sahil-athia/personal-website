@@ -97,7 +97,14 @@ export default function Skills() {
                   </div>
                   <div className="card--hover">
                     <h4 className="title">Languages</h4>
-                    <p className="description">JavaScript, Ruby, HTML, CSS</p>
+                    <p className="description">
+                      <ul>
+                        <li>JavaScript</li>
+                        <li>Ruby</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                      </ul>                      
+                    </p>
                   </div>
                   <div className="card--border">
                   </div>
@@ -113,7 +120,19 @@ export default function Skills() {
                   </div>
                   <div className="card--hover">
                     <h4 className="title">Frameworks & Libraries </h4>
-                    <p className="description">NodeJS, ReactJS, Ajax, Express, EJS, jQuery, Bootstrap, SASS, Rails</p>
+                    <p className="description">
+                      <ul>
+                        <li>NodeJS</li>
+                        <li>ReactJS</li>
+                        <li>Ajax</li>
+                        <li>Express</li>
+                        <li>EJS</li>
+                        <li>jQuery</li>
+                        <li>Bootstrap</li>
+                        <li>SASS</li>
+                        <li>Rails</li>
+                      </ul>                      
+                    </p>
                   </div>
                   <div className="card--border">
                   </div>
@@ -129,7 +148,13 @@ export default function Skills() {
                   </div>
                   <div className="card--hover">
                     <h4 className="title">Systems, CMS, & Databases</h4>
-                    <p className="description">SQL, Git, Command Line</p>
+                    <p className="description">
+                    <ul>
+                        <li>SQL</li>
+                        <li>Command Line</li>
+                        <li>Git Version Control</li>
+                      </ul>  
+                    </p>
                   </div>
                   <div className="card--border">
                   </div>
@@ -145,7 +170,16 @@ export default function Skills() {
                   </div>
                   <div className="card--hover">
                     <h4 className="title">Testing </h4>
-                    <p className="description">Jest, Mocha, Chai, Cypress, Storybook</p>
+                    <p className="description">
+                      <ul>
+                        <li>Jest</li>
+                        <li>Mocha</li>
+                        <li>Chai</li>
+                        <li>Cypress</li>
+                        <li>Storybook</li>
+                        <li>Capybara</li>
+                      </ul>  
+                    </p>
                   </div>
                   <div className="card--border">
                   </div>

@@ -130,6 +130,14 @@
     .card {
       a {
         color: #F7F7F7;
+
+        .card--hover {
+          .title {
+            margin-top: auto;
+            margin-bottom: auto;
+          }
+        }
+
         &:hover {
 
             
@@ -141,6 +149,13 @@
           
           .card--hover {
             display: block;
+
+            .title {
+              display:none;
+            }
+            .description {
+              font-size: 150%;
+            }
           }
         }
       }
