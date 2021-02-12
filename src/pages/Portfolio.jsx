@@ -1,9 +1,14 @@
 import "./Portfolio.scss"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import $ from 'jquery'
 
 export default function Portfolio() {
-  
+  const ALL = "ALL"
+  const JS = "JS"
+  const RUBY = "RUBY"
+  const DAPP = "DAPP"
+  const [state, setState] = useState(ALL)
+
   useEffect(() => {
     const viewportHeight = $(window).height();
     $(window).on("scroll", function () {
@@ -20,6 +25,12 @@ export default function Portfolio() {
   return(
     <div className="portfolio-box">
       <h1>Portfolio Page</h1>
+      <a href="https://github.com/sahil-athia/final-project">Insight</a><br></br>
+      <a href="https://github.com/sahil-athia/Jungle">Jungle</a><br></br>
+      <a href="https://github.com/sahil-athia/scheduler">Scheduler</a><br></br>
+      <a href="https://github.com/sahil-athia/tweeter">Tweeter</a><br></br>
+      <a href="https://github.com/JaredFlomen/midterm">Guitar Market</a><br></br>
+      <a href="https://github.com/sahil-athia/tinyapp">TinyApp</a>
     </div>
   )
 }
