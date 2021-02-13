@@ -2,6 +2,11 @@
   color: white;
   background-color: #0A0A0A;
   height: 100vh;
+  overflow: hidden;
+  font-family: 'Cormorant Garamond', serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   -webkit-transition: background-color 1000ms linear;
   -moz-transition: background-color 1000ms linear;
   -o-transition: background-color 1000ms linear;
@@ -13,7 +18,13 @@
   //   // filter: brightness(0.9);
   // }
 
-  
+  .about-header {
+    margin-top: 10vh;
+    width: 100vw;
+    margin-left: 10vw;
+    text-align: left;
+    font-size: 700%;
+  }
 }
 
 .about-box.scrolled {
