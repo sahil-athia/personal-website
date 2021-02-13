@@ -8,8 +8,17 @@
   -o-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
   transition: background-color 500ms linear;
-}
 
+
+  .projects {
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows: 30vh 30vh; 
+    column-gap: 5vw;
+    row-gap: 5vh;
+  }
+  
+}
 .portfolio-box.scrolled {
   background-color:  #F7F7F7;
   -webkit-transition: background-color 1000ms linear;

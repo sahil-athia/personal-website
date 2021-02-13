@@ -25,12 +25,14 @@ export default function Portfolio() {
   return(
     <div className="portfolio-box">
       <h1>Portfolio Page</h1>
-      <a href="https://github.com/sahil-athia/final-project">Insight</a><br></br>
-      <a href="https://github.com/sahil-athia/Jungle">Jungle</a><br></br>
-      <a href="https://github.com/sahil-athia/scheduler">Scheduler</a><br></br>
-      <a href="https://github.com/sahil-athia/tweeter">Tweeter</a><br></br>
-      <a href="https://github.com/JaredFlomen/midterm">Guitar Market</a><br></br>
-      <a href="https://github.com/sahil-athia/tinyapp">TinyApp</a>
+      <div className="projects">
+        <a target="_blank" href="https://github.com/sahil-athia/final-project">Insight</a>
+        <a target="_blank" href="https://github.com/sahil-athia/Jungle">Jungle</a>
+        <a target="_blank" href="https://github.com/sahil-athia/scheduler">Scheduler</a>
+        <a target="_blank" href="https://github.com/sahil-athia/tweeter">Tweeter</a>
+        <a target="_blank" href="https://github.com/JaredFlomen/midterm">Guitar Market</a>
+        <a target="_blank" href="https://github.com/sahil-athia/tinyapp">TinyApp</a>
+      </div>
     </div>
   )
 }
