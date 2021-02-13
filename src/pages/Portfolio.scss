@@ -13,8 +13,15 @@
   -ms-transition: background-color 1000ms linear;
   transition: background-color 500ms linear;
 
-  .portfolio-header {
+  .portfolio-note {
     margin-top: 10vh;
+    width: 100vw;
+    margin-left: 10vw;
+    text-align: left;
+  }
+
+  .portfolio-header {
+    // margin-top: 10vh;
     width: 100vw;
     margin-left: 10vw;
     text-align: left;
@@ -31,11 +38,36 @@
     .project-img {
       width: 100%;
       height: 100%;
-      position: relative;
     }
 
-    .project-text {
+    .tooltip {
+      background-color: white;
+      color: white;
+      position: relative;
+      display: inline-block;
 
+      &:hover {
+        .tooltiptext {
+          visibility: visible;
+        }
+      }
+
+      .tooltiptext {
+        visibility: hidden;
+        background-color: white;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+       
+        /* Position the tooltip text - see examples below! */
+        position: absolute;
+        z-index: 1;
+        width: 120px;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -60px;
+      }
     }
   }
   
