@@ -31,7 +31,7 @@ export default function Portfolio() {
     <div className="portfolio-box">
       <span className="portfolio-note" data-aos="fade-up" data-aos-duration="1500">CLICK TO VIEW</span>
       <h1 className="portfolio-header" data-aos="fade-up" data-aos-duration="1500">PORTFOLIO</h1>
-      <div className="button-box">
+      <div className="button-box" data-aos="fade-up" data-aos-duration="1500">
         <button onClick={() => changeView(ALL)} className="button">All</button>
         <button onClick={() => changeView(JS)} className="button">JavaScript</button>
         <button onClick={() => changeView(RUBY)} className="button">Ruby</button>

@@ -1,7 +1,7 @@
 .portfolio-box {
   color: white;
   background-color: #0A0A0A;
-  height: 100vh;
+  height: 120vh;
   overflow: hidden;
   font-family: 'Cormorant Garamond', serif;
   display: flex;
@@ -28,6 +28,21 @@
     font-size: 700%;
   }
 
+  .button-box {
+    display: flex;
+    flex-direction: row;
+    
+    .button {
+      margin: 2vh;
+      margin-bottom: 5vh;
+      min-width: 7.5vw;
+      height: 5vh;
+      border: 0px;
+      border-radius: 3px;
+      color: white;
+      background-color: #132C2D;
+    }
+  }
   .projects {
     display: grid;
     grid-template-columns: 25vw 25vw 25vw;
