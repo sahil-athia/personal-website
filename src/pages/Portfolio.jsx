@@ -4,6 +4,7 @@ import $ from 'jquery'
 import AllProjects from "../components/AllProjects.jsx"
 import JsProjects from "../components/JsProjects.jsx"
 import RubyProjects from "../components/RubyProjects.jsx"
+import DappProjects from "../components/DappProjects.jsx"
 
 export default function Portfolio() {
   const ALL = "ALL";
@@ -35,10 +36,12 @@ export default function Portfolio() {
         <button onClick={() => changeView(ALL)} className="button"><b>All</b></button>
         <button onClick={() => changeView(JS)} className="button"><b>JavaScript</b></button>
         <button onClick={() => changeView(RUBY)} className="button"><b>Ruby</b></button>
+        <button onClick={() => changeView(DAPP)} className="button"><b>Dapp</b></button>
       </div>
       {state === ALL && <AllProjects />}
       {state === JS && <JsProjects />}
       {state === RUBY && <RubyProjects />}
+      {state === DAPP && <DappProjects />}
     </div>
   )
 }
