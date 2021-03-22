@@ -1,6 +1,7 @@
 import "./Home.scss";
 import {TextScramble} from '../helpers/scramble.js'
 import React, { useEffect, useRef } from 'react'
+import $ from 'jquery'
 
 export default function Home(props) {
   // const text = useRef(<></>);
@@ -29,6 +30,16 @@ export default function Home(props) {
     // return function cleanup() {
     //   clearTimeout(timeOut)
     // }
+    const viewportHeight = $(window).height();
+    $(window).on("scroll", function () {
+      if ($(document).scrollTop() > viewportHeight * 0.75 && $(document).scrollTop() < viewportHeight * 1.35) {
+        $(".home-box").addClass("scrolled");
+      } else if ($(document).scrollTop() > viewportHeight * 1.35) {
+          $(".home-box").removeClass("scrolled");
+      } else {
+          $(".home-box").removeClass("scrolled");
+      }
+  });
   }, [])
 
   return(
