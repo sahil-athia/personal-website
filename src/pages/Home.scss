@@ -9,7 +9,12 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-
+	-webkit-transition: background-color 1000ms linear;
+  -moz-transition: background-color 1000ms linear;
+  -o-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+	transition: background-color 500ms linear;
+	
   .menu {
     width: 100vw;
     display: flex;
@@ -62,6 +67,15 @@
     font-size: 700%;
     z-index: 1;
   }
+}
+
+.home-box.scrolled {
+  background-color:  #F7F7F7;
+  -webkit-transition: background-color 1000ms linear;
+  -moz-transition: background-color 1000ms linear;
+  -o-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 500ms linear;
 }
 
 $pure-white: hsla(0, 0%, 100%, 1); // #fff
