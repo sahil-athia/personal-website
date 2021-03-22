@@ -35,7 +35,7 @@ function App() {
   return (
     <>
       <Home scrollToContact={scrollToContact} homePage={homePage}/>
-      <About />
+      {/* <About /> */}
       <Skills />
       <Portfolio />
       <Contact scrollToTop={scrollToTop} contactPage={contactPage}/>

@@ -40,7 +40,7 @@ export default function Portfolio() {
       </div>
       {state === ALL && <AllProjects />}
       {state === JS && <JsProjects />}
-      {state === RUBY && <RubyProjects />}
+      {state === RUBY && <RubyProjects />} 
       {state === DAPP && <DappProjects />}
     </div>
   )
