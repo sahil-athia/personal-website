@@ -75,7 +75,11 @@
   -moz-transition: background-color 1000ms linear;
   -o-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
-  transition: background-color 500ms linear;
+	transition: background-color 500ms linear;
+	
+	.greeting-box {
+		visibility: hidden;
+	}
 }
 
 $pure-white: hsla(0, 0%, 100%, 1); // #fff
