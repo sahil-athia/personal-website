@@ -18,9 +18,9 @@ export default function Portfolio() {
   useEffect(() => {
     const viewportHeight = $(window).height();
     $(window).on("scroll", function () {
-      if ($(document).scrollTop() > viewportHeight * 1.75 && $(document).scrollTop() < viewportHeight * 2.35) {
+      if ($(document).scrollTop() > viewportHeight * 0.75 && $(document).scrollTop() < viewportHeight * 1.35) {
         $(".portfolio-box").addClass("scrolled");
-      } else if ($(document).scrollTop() > viewportHeight * 2.35) {
+      } else if ($(document).scrollTop() > viewportHeight * 1.35) {
           $(".portfolio-box").removeClass("scrolled");
       } else {
           $(".portfolio-box").removeClass("scrolled");

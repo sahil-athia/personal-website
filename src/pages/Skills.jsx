@@ -9,9 +9,9 @@ export default function Skills() {
   useEffect(() => {
     const viewportHeight = $(window).height();
     $(window).on("scroll", function () {
-        if ($(document).scrollTop() > viewportHeight * 1.75 && $(document).scrollTop() < viewportHeight * 2.35) {
+        if ($(document).scrollTop() > viewportHeight * 0.75 && $(document).scrollTop() < viewportHeight * 1.35) {
           $(".skills-box").addClass("scrolled");
-        } else if ($(document).scrollTop() > viewportHeight * 2.35) {
+        } else if ($(document).scrollTop() > viewportHeight * 1.35) {
             $(".skills-box").removeClass("scrolled");
         } else {
             $(".skills-box").removeClass("scrolled");
