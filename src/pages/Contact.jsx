@@ -45,7 +45,9 @@ export default function Contact(props) {
         </div>
 
         <div data-aos="zoom-in" data-aos-duration="2000">
-          <img src={envelopeLogo} alt="Envelope-Logo" className="envelope logo" />
+          <a href = "mailto:sahilathia918@gmail.com">
+            <img src={envelopeLogo} alt="Envelope-Logo" className="envelope logo" />
+          </a>
         </div>
       </div>
 
