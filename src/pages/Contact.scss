@@ -82,5 +82,22 @@
     .contact-header {
       font-size: 300%;
     }
+
+    .contact-info {
+      max-width: 90vw;
+      .contact-words {
+        font-size: 100%;
+        margin: 4vh;
+      }
+
+      .logo {
+        visibility: visible;
+         margin: 4vh;
+         filter: invert(1);
+         height: 20vh;
+       }
+    }
   }
+
+
 }
