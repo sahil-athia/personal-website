@@ -79,12 +79,16 @@
 
 @media (max-width: 768px) {
   .contact-box {
+    height: auto;
+
     .contact-header {
       font-size: 300%;
     }
 
     .contact-info {
       max-width: 90vw;
+      height: 30%;
+
       .contact-words {
         font-size: 100%;
         margin: 4vh;
@@ -96,6 +100,9 @@
          filter: invert(1);
          height: 20vh;
        }
+    }
+    .scroll-top {
+      margin-bottom: 5vh;
     }
   }
 
